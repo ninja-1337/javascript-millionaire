@@ -9,7 +9,7 @@ Watch the full [Node.js CLI Tutorial](https://youtu.be/_oHByo8tiEY) video on You
 ## Take the Quiz
 
 ```
-npx firequiz
+npx hackerfirequiz
 ```
 
 ## Packages Used

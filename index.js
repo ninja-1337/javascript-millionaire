@@ -26,14 +26,14 @@ const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 
 async function welcome() {
   const rainbowTitle = chalkAnimation.rainbow(
-    'Who Wants To Be A JavaScript Millionaire? \n'
+    'Who Wants To Be A JavaScript Hacker Millionaire? \n'
   );
 
   await sleep();
   rainbowTitle.stop();
 
   console.log(`
-    ${chalk.bgBlue('HOW TO PLAY')} 
+    ${chalk.bgBlue('HOW TO HACK')} 
     I am a process on your computer.
     If you get any question wrong I will be ${chalk.bgRed('killed')}
     So get all the questions right...
@@ -48,7 +48,7 @@ async function handleAnswer(isCorrect) {
   if (isCorrect) {
     spinner.success({ text: `Nice work ${playerName}. That's a legit answer` });
   } else {
-    spinner.error({ text: `💀💀💀 Game over, you lose ${playerName}!` });
+    spinner.error({ text: `💀💀💀 Game over, you got owned ${playerName}!` });
     process.exit(1);
   }
 }
@@ -57,7 +57,7 @@ async function askName() {
   const answers = await inquirer.prompt({
     name: 'player_name',
     type: 'input',
-    message: 'What is your name?',
+    message: 'What is your hacker name?',
     default() {
       return 'Player';
     },
@@ -73,7 +73,7 @@ function winner() {
 
     console.log(
       chalk.green(
-        `Programming isn't about what you know; it's about making the command line look cool`
+        `Programming isn't about what you know; it's about hacking the command line to look cool`
       )
     );
     process.exit(0);
