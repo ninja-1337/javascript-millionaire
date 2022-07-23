@@ -1,7 +1,7 @@
 {
-  "name": "firequiz",
-  "version": "0.0.4",
-  "description": "Who wants to be a JavaScript millionaire?",
+  "name": "hackerfirequiz",
+  "version": "0.0.5",
+  "description": "Who wants to be a JavaScript hacker millionaire?",
   "homepage": "https://fireship.io",
   "type": "module",
   "repository": {
